@@ -1,0 +1,203 @@
+html {
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #f0f0f0;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+#app {
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+.main-table {
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+	min-width: 100vw;
+	height: 100vh;
+	width: 100vw;
+}
+
+.main-table > tr {
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+	min-width: 100vw;
+	height: 100vh;
+	width: 100vw;
+}
+
+.main-td {
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+	min-width: 100vw;
+	height: 100vh;
+	width: 100vw;
+}
+
+.main-td > table {
+	margin: 0 auto;
+}
+
+.main-td table tr td {
+	padding: 20px;
+}
+
+.main-link {
+	color: #000000;
+	text-decoration: underline;
+	border: 0px;
+}
+
+.main-link:hover {
+	color: #000000;
+	text-decoration: none;
+	border: 0px;
+}
+
+.main-link h4 {
+	margin-top: 20px;
+}
+
+nav > ul {
+	margin: 0px;
+	margin-top: 20px;
+	background: #ffffff;
+	padding: 20px;
+	padding-left: 30px;
+}
+
+.no-margin {
+	margin: 0px !important;
+}
+
+.content {
+	margin-top: 20px;
+	padding: 20px;
+	background: #ffffff;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.breadcrumbs {
+	padding: 10px;
+}
+
+.code {
+	padding: 0px;
+	list-style: none;
+}
+
+.declare-class {
+	color: #235a93;
+}
+
+.declare-class-name {
+	color: #4e7b00;
+}
+
+.declare-extends {
+	color: #ba151d;
+}
+
+.declare-function {
+	color: #235a93;
+}
+
+.declare-visibility {
+	color: #ba151d;
+}
+
+
+.declare-abstraction {
+	color: #ba151d;
+}
+
+.declare-static {
+	color: #ba151d;
+}
+
+.declare-math-operator {
+	color: #ba151d;
+}
+
+.declare-text {
+	color: #6d3719;
+}
+
+.declare-service-container {
+	color: #235a93;
+}
+
+.declare-parameter {
+	color: #000000;
+}
+
+.declare-numeric {
+	color: #622094;
+}
+
+.red {
+	color: #ff0000;
+}
+
+.contains-sub-list > .sub-list {
+	display: none
+}
+
+.checkbox-of-displaying {
+	display: none;
+}
+
+.hide-sub-list-icon {
+	display: none;
+}
+
+.show-sub-list-icon {
+	display: inline;
+}
+
+.contains-sub-list > .checkbox-of-displaying:checked ~ .sub-list {
+	display: block;
+}
+
+.contains-sub-list > .checkbox-of-displaying:checked ~ .show-sub-list-icon {
+	display: none;
+}
+
+.contains-sub-list > .checkbox-of-displaying:checked ~ .hide-sub-list-icon {
+	display: inline;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.add-link {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+.add-link:hover {
+	cursor: pointer;
+	text-decoration: none;
+}

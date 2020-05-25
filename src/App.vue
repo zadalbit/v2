@@ -1,28 +1,22 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <router-view/>
+        <notifications group="foo" />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    @font-face {
+        font-family: "Glyphicons Halflings";
+        src: url("~@/assets/fonts/glyphicons-halflings-regular.eot");
+        src: url("~@/assets/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("~@/assets/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("~@/assets/fonts/glyphicons-halflings-regular.woff") format("woff"), url("~@/assets/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("~@/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+    }
+    @import '~@/assets/css/bootstrap/bootstrap.min.css';
+    @import '~@/assets/css/main.css';
 </style>
