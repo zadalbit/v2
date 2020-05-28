@@ -26,6 +26,10 @@
 import Api from '@/Services/Api'
 import AppLayout from '@/Layouts/AppLayout.vue'
 
+/*To do:
+Бібліотека допоміжних функцій опрацювання виводу проекції анімації руху елемента по осям координат з різних точок зору
++ функції утворення 2д проекцій з 3д моделей*/
+
 export default {
     name: 'LibrariesManagerFormPage',
     components: {
