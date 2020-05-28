@@ -22,12 +22,14 @@
 <script>
 import Api from '@/Services/Api'
 import AppLayout from '@/Layouts/AppLayout.vue'
+import IsEmptyMixin from '@/Mixins/IsEmptyMixin.vue'
 
 export default {
     name: 'ProjectsManagerIndexPage',
     components: {
         AppLayout
     },
+    mixins: [ IsEmptyMixin ],
     data() {
         return {
             projects: [],
