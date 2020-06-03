@@ -162,6 +162,7 @@
                 </nav>
             </div>
         </div>
+        <slot name="modals"></slot>
     </div>
 </template>
 
