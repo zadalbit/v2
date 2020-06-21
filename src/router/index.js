@@ -8,10 +8,8 @@ import DocumentationsIndexPage from '@/Pages/Documentations/Index.vue';
 
 import InstrumentsIndexPage from '@/Pages/Instruments/Index.vue';
 import ClassesManagerFormPage from '@/Pages/Instruments/ClassesManager/Form.vue';
-import ProjectsManagerPage from '@/Pages/Instruments/ProjectsManager/Index.vue';
-import ProjectsManagerFormPage from '@/Pages/Instruments/ProjectsManager/Form.vue';
-import LibrariesManagerPage from '@/Pages/Instruments/LibrariesManager/Index.vue';
-import LibrariesManagerFormPage from '@/Pages/Instruments/LibrariesManager/Form.vue';
+import CategoriesManagerPage from '@/Pages/Instruments/CategoriesManager/Index.vue';
+import CategoriesManagerFormPage from '@/Pages/Instruments/CategoriesManager/Form.vue';
 
 Vue.use(VueRouter)
 
@@ -42,24 +40,14 @@ const routes = [
       component: ClassesManagerFormPage,
     },
     {
-      name:'projects-manager',
-      path: '/instruments/projects-manager',
-      component: ProjectsManagerPage,
+      name:'categories-manager',
+      path: '/instruments/categories-manager',
+      component: CategoriesManagerPage,
     },
     {
-      name:'projects-manager-form',
-      path: '/instruments/projects-manager/form',
-      component: ProjectsManagerFormPage,
-    },
-    {
-      name:'libraries-manager',
-      path: '/instruments/libraries-manager',
-      component: LibrariesManagerPage,
-    },
-    {
-      name:'libraries-manager-form',
-      path: '/instruments/libraries-manager/form',
-      component: LibrariesManagerFormPage,
+      name:'categories-manager-form',
+      path: '/instruments/categories-manager/form',
+      component: CategoriesManagerFormPage,
     }
 ]
 

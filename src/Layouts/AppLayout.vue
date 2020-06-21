@@ -137,17 +137,10 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    Менеджер проектів
+                                    Менеджер категорій
                                     <ul>
-                                        <li><router-link :to="{ name: 'projects-manager'}">Каталог</router-link></li>
-                                        <li><router-link :to="{ name: 'projects-manager-form'}">Форма</router-link></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Менеджер бібліотек
-                                    <ul>
-                                        <li><router-link :to="{ name: 'libraries-manager'}">Каталог</router-link></li>
-                                        <li><router-link :to="{ name: 'libraries-manager-form'}">Форма</router-link></li>
+                                        <li><router-link :to="{ name: 'categories-manager'}">Каталог</router-link></li>
+                                        <li><router-link :to="{ name: 'categories-manager-form'}">Форма</router-link></li>
                                     </ul>
                                 </li>
                                 <li>

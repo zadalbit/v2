@@ -10,6 +10,21 @@
         </template>
         <template v-slot:content>
             <div class="col-lg-12">
+                <table>
+                    <tr>
+                        <td>
+                            Ідентифікатор <br>
+                            <input type="text" v-model="where_group.sub_groups[0].where_statements[0].value">
+                        </td>
+                        <td>
+                            Назва <br>
+                        </td>
+                        <td>
+                            Батьківська категорія <br>
+                            
+                        </td>
+                    </tr>
+                </table>
                 Кількіть записів:<br>
                 Сторінка:<br>
                 Сортувати:<br>
@@ -24,13 +39,39 @@ import Api from '@/Services/Api'
 import AppLayout from '@/Layouts/AppLayout.vue'
 
 export default {
-    name: 'LibrariesManagerIndexPage',
+    name: 'CategoriesManagerIndexPage',
     components: {
         AppLayout
     },
     data() {
         return {
-            projects: [],
+            where_group: {
+                connector: 'and',
+                sub_groups: [
+                    {
+                        connector: 'and',
+                        where_statements: [
+                            {
+                                enabled: false,
+                                column: 'id',
+                                operator: '=',
+                                value: '',
+                            }
+                        ]
+                    },
+                    {
+                        connector: 'or',
+                        where_statements: [
+                            {
+                                column: 'id',
+                                operator: 'like',
+                                value: '',
+                            }
+                        ]
+                    },
+                ]
+            },
+            categories: [],
             records_numb: {
                 value:'all',
                 options: [
@@ -64,7 +105,7 @@ export default {
     methods: {
         createSearch: function() {
             // var instance = this;
-            Api().get('search/create?entity=library')
+            Api().get('instruments/categories?where=' + JSON.stringify(this.where_group))
                 .then(function(result) {
                     console.log(result);
                 })
